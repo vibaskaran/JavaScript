@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="datetime" placeholder="Date/Time">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="country" placeholder="Country">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="shape" placeholder="Shape">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <a id="search" class="btn btn-default">Search</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped" id="indextable">
+                    <thead>
+                        <tr>
+                            <th>
+                                <a href="javascript:SortTable(0,'D','mdy');">Date/Time</a>
+                            </th>
+                            <th>
+                                <a href="javascript:SortTable(1,'T');">City</a>
+                            </th>
+                            <!-- <th>City</th> -->
+                            <th>
+                                <a href="javascript:SortTable(2,'T');">State</a>
+                            </th>
+                            <th>
+                                <a href="javascript:SortTable(3,'T');">Country</a>
+                            </th>
+                            <th>
+                                <a href="javascript:SortTable(4,'T');">Shape</a>
+                            </th>
+                            <th>
+                                <a href="javascript:SortTable(5,'T');">Duration</a>
+                            </th>
+                            <th>
+                                <a href="javascript:SortTable(6,'T');">Comment</a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <button id="load-btn" class="btn btn-primary">Load More Addresses</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- <script src="addressData.js" type="text/javascript"></script> -->
+    <script src="ufoData.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
